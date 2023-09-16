@@ -37,3 +37,9 @@ Tela de pedidos
 tela de endereço
 
 ![image](https://github.com/carlosgomessouza/Pizzaria-Senac/assets/143233334/11b03ec2-d7f5-436b-b74f-ec532b8d4c31)
+
+tela de pagamento
+
+![image](https://github.com/carlosgomessouza/Pizzaria-Senac/assets/143233334/65d59af9-d214-4d93-9231-ad34c4a65dc7)
+
+
