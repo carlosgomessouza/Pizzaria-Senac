@@ -18,4 +18,9 @@ Tela de cadastro
 Tela de cliente
 ![image](https://github.com/carlosgomessouza/Pizzaria-Senac/assets/143851063/6b7f396f-3a23-4928-b6ff-6f1114818a0c)
 
+Tela motoboy
+
+![image](https://github.com/carlosgomessouza/Pizzaria-Senac/assets/48370614/b0d97d69-afc2-46db-aee9-1a20d1d57b7c)
+
+
 
