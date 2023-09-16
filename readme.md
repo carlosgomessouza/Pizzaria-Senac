@@ -14,5 +14,7 @@ Tela Login
 Tela de cadastro
 
 ![image](https://github.com/carlosgomessouza/Pizzaria-Senac/assets/48370614/8b5e9a27-d4b3-42fe-945c-80f46ab0a70f)
+Tela de cliente
+![image](https://github.com/carlosgomessouza/Pizzaria-Senac/assets/143851063/6b7f396f-3a23-4928-b6ff-6f1114818a0c)
 
 
