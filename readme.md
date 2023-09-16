@@ -23,4 +23,7 @@ Tela motoboy
 ![image](https://github.com/carlosgomessouza/Pizzaria-Senac/assets/48370614/b0d97d69-afc2-46db-aee9-1a20d1d57b7c)
 
 
+Tela de cadastro de produtos
 
+
+![tela-produtos](https://github.com/carlosgomessouza/Pizzaria-Senac/assets/102757641/c16946c4-8c74-47b4-af02-523fddc672ac)
