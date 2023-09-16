@@ -27,3 +27,10 @@ Tela de cadastro de produtos
 
 
 ![tela-produtos](https://github.com/carlosgomessouza/Pizzaria-Senac/assets/102757641/c16946c4-8c74-47b4-af02-523fddc672ac)
+
+
+Tela de pedidos
+
+
+![tela-pedido](https://github.com/carlosgomessouza/Pizzaria-Senac/assets/102757641/03dff1bc-8a70-4b7a-9655-56321486b84d)
+
