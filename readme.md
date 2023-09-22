@@ -34,21 +34,21 @@
 
 ## Tela de cadastro de produtos
 
-
-![tela-produtos](https://github.com/carlosgomessouza/Pizzaria-Senac/assets/102757641/c16946c4-8c74-47b4-af02-523fddc672ac)
+![image](https://github.com/carlosgomessouza/Pizzaria-Senac/assets/143851063/2eba175d-e780-45cc-823b-298da210ad2f)
 
 
 ## Tela de pedidos
 
-
-![tela-pedido](https://github.com/carlosgomessouza/Pizzaria-Senac/assets/102757641/03dff1bc-8a70-4b7a-9655-56321486b84d)
+![image](https://github.com/carlosgomessouza/Pizzaria-Senac/assets/143851063/eba1f613-7a98-4f68-8d76-350fbb5e809c)
 
 ## Tela de endereço
 
-![image](https://github.com/carlosgomessouza/Pizzaria-Senac/assets/143233334/11b03ec2-d7f5-436b-b74f-ec532b8d4c31)
+![image](https://github.com/carlosgomessouza/Pizzaria-Senac/assets/143851063/439018d4-58e2-4b9d-8abb-e9b6cbc3c3a4)
+
 
 ## Tela de pagamento
 
-![image](https://github.com/carlosgomessouza/Pizzaria-Senac/assets/143233334/65d59af9-d214-4d93-9231-ad34c4a65dc7)
+![image](https://github.com/carlosgomessouza/Pizzaria-Senac/assets/143851063/a40d0380-c41c-4aff-97fd-08f94f4716a2)
+
 
 
