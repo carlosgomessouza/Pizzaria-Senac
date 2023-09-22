@@ -1,13 +1,14 @@
 Funcionalidades
 
-1- cadastrar - usuario do sistema 
-2 - login - usuario do sistema 
-3 - criar pedido
-4 - cadastrar produto
-5 - lista produto
-6 - cadastra cliente 
-7 - lista cliente 
-8 - listar pedido
+* - cadastrar - usuario do sistema 
+* - login - usuario do sistema 
+* - criar pedido
+* - cadastrar produto
+* - lista produto
+* - cadastra cliente 
+* - lista cliente 
+* - listar pedido
+  - 
 ![image](https://github.com/carlosgomessouza/Pizzaria-Senac/assets/126069225/ed96113d-a2ec-4b3d-a5f4-d345bf3f967c)
 Tela Login
 ![image](https://github.com/carlosgomessouza/Pizzaria-Senac/assets/126069225/67936718-2c2f-4d9d-b572-e3161aa08779)
