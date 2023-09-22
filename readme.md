@@ -1,4 +1,4 @@
-Funcionalidades
+# Funcionalidades
 
 * - cadastrar - usuario do sistema 
 * - login - usuario do sistema 
@@ -8,38 +8,46 @@ Funcionalidades
 * - cadastra cliente 
 * - lista cliente 
 * - listar pedido
+ 
+# MER
     
 ![image](https://github.com/carlosgomessouza/Pizzaria-Senac/assets/126069225/ed96113d-a2ec-4b3d-a5f4-d345bf3f967c)
-Tela Login
-![image](https://github.com/carlosgomessouza/Pizzaria-Senac/assets/126069225/67936718-2c2f-4d9d-b572-e3161aa08779)
-Tela de cadastro
 
-![image](https://github.com/carlosgomessouza/Pizzaria-Senac/assets/48370614/8b5e9a27-d4b3-42fe-945c-80f46ab0a70f)
+# Protótipo
+## Tela login
 
-Tela de cliente
-![image](https://github.com/carlosgomessouza/Pizzaria-Senac/assets/143851063/6b7f396f-3a23-4928-b6ff-6f1114818a0c)
+![telalogin](https://github.com/carlosgomessouza/Pizzaria-Senac/assets/102757641/8398618e-5f18-4137-ae05-adb38c089cc4)
 
-Tela motoboy
+## Tela de cadastro
 
-![image](https://github.com/carlosgomessouza/Pizzaria-Senac/assets/48370614/b0d97d69-afc2-46db-aee9-1a20d1d57b7c)
+![telacadastro](https://github.com/carlosgomessouza/Pizzaria-Senac/assets/102757641/7872a40e-3944-41c0-9398-bda5901235a7)
+
+## Tela de cliente
+
+![telacliente](https://github.com/carlosgomessouza/Pizzaria-Senac/assets/102757641/09e242b2-37d4-49b1-8a71-6dc2f790f302)
 
 
-Tela de cadastro de produtos
+## Tela motoboy
+
+![telamotoboy](https://github.com/carlosgomessouza/Pizzaria-Senac/assets/102757641/dcae3905-4d90-43b9-a409-9983554c0472)
+
+
+## Tela de cadastro de produtos
 
 
 ![tela-produtos](https://github.com/carlosgomessouza/Pizzaria-Senac/assets/102757641/c16946c4-8c74-47b4-af02-523fddc672ac)
 
 
-Tela de pedidos
+## Tela de pedidos
 
 
 ![tela-pedido](https://github.com/carlosgomessouza/Pizzaria-Senac/assets/102757641/03dff1bc-8a70-4b7a-9655-56321486b84d)
 
-tela de endereço
+## Tela de endereço
 
 ![image](https://github.com/carlosgomessouza/Pizzaria-Senac/assets/143233334/11b03ec2-d7f5-436b-b74f-ec532b8d4c31)
 
-tela de pagamento
+## Tela de pagamento
 
 ![image](https://github.com/carlosgomessouza/Pizzaria-Senac/assets/143233334/65d59af9-d214-4d93-9231-ad34c4a65dc7)
 
