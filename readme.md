@@ -13,6 +13,11 @@
     
 ![image](https://github.com/carlosgomessouza/Pizzaria-Senac/assets/126069225/ed96113d-a2ec-4b3d-a5f4-d345bf3f967c)
 
+## Modelo do Banco
+
+![image](https://github.com/carlosgomessouza/Pizzaria-Senac/assets/126069225/a07c10f0-b195-4ccf-bde5-204122bac7c5)
+
+
 # Protótipo
 ## Tela login
 
