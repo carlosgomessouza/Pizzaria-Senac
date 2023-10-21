@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../css/estilo.css">
     <link rel="stylesheet" href="../css/cadastro.css">
     <link rel="stylesheet" href="../css/navbar.css">
-    <title>Novo Pedido</title>
+    <title>Novo Produto</title>
 </head>
 <body>
 
@@ -46,43 +46,49 @@
 
 
 <div class="containerr">
-
-    <div class="nav">
-        <p class="elemento-sel">Novo Pedido</p>
-        <p class="elemento">Endereço</p>
-        <p class="elemento">Forma de Pagamento</p>
-    </div>
-
-
     <div class="formulario">
-        <h2 class="titulo-form">NOVO PEDIDO</h2>
-        <form action="/create-car" method="post">
+        <h2 class="titulo-form">CADASTRO DE PRODUTO</h2>
 
+
+        <form action="/create-car" method="post">
         <div class="form-floating mb-3 row">
             <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
-            <label for="floatingInput">Produto</label>
+            <label for="floatingInput">Nome</label>
         </div>
         <div class="form-floating mb-3 row">
             <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
             <label for="floatingInput">Preço</label>
         </div>
         <div class="form-floating mb-3 row">
-            <input type="number" class="form-control" id="floatingInput" placeholder="name@example.com">
-            <label for="floatingInput">Quantidade</label>
-        </div>
-        <div class="form-floating mb-3 row">
-            <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
-            <label for="floatingInput">Desconto</label>
+            <input type="tel" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Tipo</label>
         </div>
 
-            <button class="botao-form" type="submit">
-                <a class="link" href="endereco.html">Próximo</a>
-            </button>
-        </form>
     </div>
+    <button type="submit" class="botao-form" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Cadastrar
+    </button>
+    </form>
 
-
-
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Novo produto cadastrado com sucesso!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
 
 </div>
 

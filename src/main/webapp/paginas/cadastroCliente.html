@@ -7,13 +7,13 @@
   <link rel="stylesheet" href="../css/estilo.css">
   <link rel="stylesheet" href="../css/cadastro.css">
   <link rel="stylesheet" href="../css/navbar.css">
-  <title>Forma de Pagamento</title>
+  <title>Cadastro Cliente</title>
 </head>
 <body>
 
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-    <img src="img/logo.jpeg" alt="" class="logo">
+    <a class="navbar-brand" href="#">Navbar</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -46,32 +46,33 @@
 
 
 <div class="containerr">
-
-  <div class="nav">
-    <p class="elemento">Novo Pedido</p>
-    <p class="elemento">Endereço</p>
-    <p class="elemento-sel">Forma de Pagamento</p>
-  </div>
-
-
   <div class="formulario">
-    <h2 class="titulo-form">FORMA DE PAGAMENTO</h2>
+    <h2 class="titulo-form">CADASTRO DE CLIENTE</h2>
 
     <form action="/create-car" method="post">
-    <select class="form-select" aria-label="Default select example">
-      <option selected value="credito">Cartão de Crédito</option>
-      <option value="debito">Cartão de Débito</option>
-      <option value="pix">PIX</option>
-      <option value="dinheiro">Dinheiro</option>
-    </select>
+    <div class="form-floating mb-3 row">
+      <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+      <label for="floatingInput">Nome</label>
+    </div>
+    <div class="form-floating mb-3 row">
+      <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+      <label for="floatingInput">Sobrenome</label>
+    </div>
+    <div class="form-floating mb-3 row">
+      <input type="tel" class="form-control" id="floatingInput" placeholder="name@example.com">
+      <label for="floatingInput">Telefone</label>
+    </div>
+    <div class="form-floating mb-3 row">
+      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+      <label for="floatingInput">E-mail</label>
+    </div>
 
   </div>
   <button type="submit" class="botao-form" data-bs-toggle="modal" data-bs-target="#exampleModal">
-    Finalizar
+    Cadastrar
   </button>
-  </form>
 
-  <a class="botao-voltar" href="endereco.html">Voltar</a>
+  </form>
 
   <!-- Modal -->
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -82,17 +83,16 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          Deseja finalizar o pedido?
+          Novo cliente cadastrado com sucesso!
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Não</button>
-          <button type="button" class="btn btn-primary">
-            <a class="link" href="novoPedido.html">Sim</a>
-          </button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">OK</button>
         </div>
       </div>
     </div>
   </div>
+</div>
+</div>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
