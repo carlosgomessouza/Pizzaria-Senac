@@ -1,6 +1,6 @@
 package br.com.pizzeria.business;
 
-import br.com.pizzeria.dao.DaoHelper;
+import br.com.pizzeria.dao.RegisterDao;
 import br.com.pizzeria.model.User;
 
 public class RegisterBusiness {
@@ -11,7 +11,7 @@ public class RegisterBusiness {
     }
 
     public void UserSave() throws Exception {
-        DaoHelper.userSave(User);
+        RegisterDao.userSave(User);
     }
 
 }

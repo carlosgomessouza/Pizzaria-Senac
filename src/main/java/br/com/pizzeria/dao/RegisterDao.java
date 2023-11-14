@@ -6,7 +6,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 
-public class DaoHelper {
+public class RegisterDao {
 
     public static void userSave(User user) throws Exception {
 
