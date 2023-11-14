@@ -9,14 +9,10 @@
 * - lista cliente 
 * - listar pedido
  
-# MER
-    
-![image](https://github.com/carlosgomessouza/Pizzaria-Senac/assets/126069225/ed96113d-a2ec-4b3d-a5f4-d345bf3f967c)
 
-## Modelo do Banco
+# MER ATUALIZADO
 
-![image](https://github.com/carlosgomessouza/Pizzaria-Senac/assets/126069225/a07c10f0-b195-4ccf-bde5-204122bac7c5)
-
+![image](https://github.com/carlosgomessouza/Pizzaria-Senac/assets/143233334/6fd268e0-8e28-4737-8a0d-47cde915bbe2)
 
 # Protótipo
 ## Tela login
