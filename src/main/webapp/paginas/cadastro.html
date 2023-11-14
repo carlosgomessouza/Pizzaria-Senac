@@ -49,34 +49,34 @@
   <div class="formulario">
     <h2 class="titulo-form">CADASTRO DE FUNCIONÁRIO</h2>
 
-
+<form id="registerForm" action="/register-user" method="post">
     <div class="form-floating mb-3 row">
-      <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+      <input type="text" class="form-control" name="name" id="floatingInput" placeholder="Fulano">
       <label for="floatingInput">Nome</label>
     </div>
     <div class="form-floating mb-3 row">
-      <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+      <input type="text" class="form-control" name="surname" id="floatingInput" placeholder="da Silva">
       <label for="floatingInput">Sobrenome</label>
     </div>
     <div class="form-floating mb-3 row">
-      <input type="tel" class="form-control" id="floatingInput" placeholder="name@example.com">
+      <input type="tel" class="form-control" name="phone" id="floatingInput" placeholder="name@example.com">
       <label for="floatingInput">Telefone</label>
     </div>
     <div class="form-floating mb-3 row">
-      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+      <input type="email" class="form-control" name="email" id="floatingInput" placeholder="name@example.com">
       <label for="floatingInput">E-mail</label>
     </div>
     <div class="form-floating mb-3 row">
-      <input type="number" class="form-control" id="floatingInput" placeholder="name@example.com">
+      <input type="number" class="form-control" name="CPF"  id="floatingInput" placeholder="name@example.com">
       <label for="floatingInput">CPF</label>
     </div>
     <div class="form-floating row">
-      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+      <input type="password" class="form-control" name="password" id="floatingPassword" placeholder="Password">
       <label for="floatingPassword">Senha</label>
     </div>
-
+    </form>
   </div>
-  <button type="button" class="botao-form" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  <button type="submit" form="registerForm" class="botao-form" data-bs-toggle="modal" data-bs-target="#exampleModal">
     Cadastrar
   </button>
 
