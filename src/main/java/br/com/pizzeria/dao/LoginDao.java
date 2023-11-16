@@ -8,7 +8,7 @@ import java.sql.*;
 public class LoginDao {
     public static boolean verifyCredentials(User user) {
 
-        String SQL = "SELECT * FROM USR WHERE USERNAME = ?";
+        String SQL = "SELECT * FROM USR WHERE Login = ?";
 
         try {
 

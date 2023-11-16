@@ -14,7 +14,7 @@ public class AuthenticationFilter implements  Filter {
 
         HttpServletRequest httpServletRequest = (HttpServletRequest) servletRequest;
 
-        if (isUserLoggedOn(httpServletRequest)) {
+        if (!isUserLoggedOn(httpServletRequest)) {
 
             servletRequest.setAttribute("message", "User not authenticated!");
 
@@ -31,9 +31,9 @@ public class AuthenticationFilter implements  Filter {
     @Override
     public void destroy() { }
 
-    private boolean isUserLoggedOn(HttpServletRequest httpServletRequest) {
+    public boolean isUserLoggedOn(HttpServletRequest httpServletRequest) {
 
-        return  httpServletRequest.getSession().getAttribute("loggedUser") == null;
+        return  httpServletRequest.getSession().getAttribute("loggedUser") != null;
 
     }
 }

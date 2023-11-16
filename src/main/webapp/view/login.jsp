@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,28 +14,7 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-        <img src="../img/logo.png" alt="" class="logo">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="sobrenos.html">Sobre Nós</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="login.html">Login</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
+<jsp:include page="action-bar.jsp" />
 
 <div class="containerr">
 
@@ -42,11 +24,11 @@
 
         <h2 class="titulo-form">LOGIN</h2>
 
-        <form action="/login" method="post">
+        <form action="/login" method="post" id="loginForm">
         <span>${requestScope.message}</span>
 
         <div class="form-floating mb-3 row">
-            <input type="email" for="username" id="login" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <input type="text" name="username" id="login" class="form-control" id="floatingInput" placeholder="name@example.com">
             <label for="floatingInput">E-mail</label>
         </div>
         <div class="form-floating row">
@@ -54,7 +36,7 @@
             <label for="floatingPassword">Senha</label>
         </div>
         </form>
-        <button class="botao-form" type="submit">Login</button>
+        <button class="botao-form" form="loginForm" type="submit">Login</button>
     </div>
 
 </div>

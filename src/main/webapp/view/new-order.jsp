@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,44 +11,18 @@
     <link rel="stylesheet" href="../css/cadastro.css">
     <link rel="stylesheet" href="../css/navbar.css">
     <title>Novo Pedido</title>
+
+    <script type="text/javascript" src="js/NewOrder.js">
+
+    </script>
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-        <img src="../img/logo.png" alt="" class="logo">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="novoProduto.html">Produtos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="novoPedido.html">Pedidos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="login.html">Login</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Cadastrar
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="cadastroCliente.html">Cliente</a></li>
-                        <li><a class="dropdown-item" href="cadastro.html">Funcionário</a></li>
-                        <li><a class="dropdown-item" href="novoProduto.html">Produto</a></li>
-                        <li><a class="dropdown-item" href="motoboy.html">Motoboy</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
+<jsp:include page="action-bar.jsp" />
 
 
-<div class="containerr">
+
+<div class="containerr form-order" id="order">
 
     <div class="nav">
         <p class="elemento-sel">Novo Pedido</p>
@@ -59,7 +36,11 @@
         <form action="/create-car" method="post">
 
         <div class="form-floating mb-3 row">
-            <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <select class="form-control" id="floatingInput" name="productList">
+                <c:forEach var="productList" items="${productList}">
+                    <option value="${productList.productID}"}>${productList.name}</option>
+                </c:forEach>
+            </select>
             <label for="floatingInput">Produto</label>
         </div>
         <div class="form-floating mb-3 row">
@@ -81,11 +62,54 @@
 
     </div>
 
-    <button class="botao-form" type="submit" onclick="proximaTela(); return false">
+    <button class="botao-form" type="submit" onclick="showAddress(); return false">
         Próximo
     </button>
 
 </div>
+
+<div class="containerr form-order address" id="address">
+
+  <div class="nav">
+    <p class="elemento">Novo Pedido</p>
+    <p class="elemento-sel">Endereço</p>
+    <p class="elemento">Forma de Pagamento</p>
+  </div>
+
+  <div class="formulario">
+    <h2 class="titulo-form">ENDERECO</h2>
+
+    <form action="/create-car" method="post">
+    <div class="form-floating mb-3 row">
+      <input type="number" class="form-control" id="floatingInput" placeholder="name@example.com">
+      <label for="floatingInput">CEP</label>
+    </div>
+    <div class="form-floating mb-3 row">
+      <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+      <label for="floatingInput">Rua</label>
+    </div>
+    <div class="form-floating mb-3 row">
+      <input type="number" class="form-control" id="floatingInput" placeholder="name@example.com">
+      <label for="floatingInput">Bairro</label>
+    </div>
+    <div class="form-floating mb-3 row">
+      <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+      <label for="floatingInput">Número</label>
+    </div>
+    <div class="form-floating mb-3 row">
+      <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+      <label for="floatingInput">Complemento</label>
+    </div>
+
+  </div>
+  <button class="botao-form" type="submit" onclick="proximaTela(); return false">
+    Próximo
+  </button>
+  </form>
+  <a class="botao-voltar" href="novoPedido.html">Voltar</a>
+
+</div>
+
 
 <script>
     function proximaTela(){

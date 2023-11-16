@@ -3,10 +3,8 @@ package br.com.pizzeria.dao;
 import br.com.pizzeria.model.User;
 import br.com.pizzeria.config.ConnectionPoolConfig;
 import java.sql.Connection;
-import java.sql.Date;
-import java.sql.DriverManager;
 import java.sql.PreparedStatement;
-import java.time.LocalDateTime;
+
 
 public class RegisterDao {
 
