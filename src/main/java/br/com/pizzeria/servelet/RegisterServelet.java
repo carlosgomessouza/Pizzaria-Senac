@@ -36,7 +36,7 @@ public class RegisterServelet extends HttpServlet {
 
             new RegisterBusiness(user).UserSave();
 
-            response.sendRedirect("/cadastro");
+            response.sendRedirect("/login");
         }catch (Exception ex){
             response.sendError(1, String.format("Erro: %s", ex));
         }
