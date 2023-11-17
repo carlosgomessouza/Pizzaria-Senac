@@ -10,9 +10,15 @@
 * - listar pedido
  
 
-# MER ATUALIZADO
+# MER 
 
 ![image](https://github.com/carlosgomessouza/Pizzaria-Senac/assets/143233334/6fd268e0-8e28-4737-8a0d-47cde915bbe2)
+
+# MER ATUALIZADO
+
+![image](https://github.com/carlosgomessouza/Pizzaria-Senac/assets/143233334/df206575-51b4-42f3-9a6a-93421c942033)
+
+
 
 # Protótipo
 ## Tela login
