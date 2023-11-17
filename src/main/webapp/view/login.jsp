@@ -18,13 +18,10 @@
 
 <div class="containerr">
 
-    <img src="../img/logo-login.png" alt="" class="img">
+    <img src="../img/logo-login.PNG" alt="" class="img">
 
-    <div class="formulario">
-
-        <h2 class="titulo-form">LOGIN</h2>
-
-        <form action="/login" method="post" id="loginForm">
+        <form class="formulario" action="/login" method="post" id="loginForm">
+            <h2 class="titulo-form">LOGIN</h2>
         <span>${requestScope.message}</span>
 
         <div class="form-floating mb-3 row">
@@ -35,8 +32,9 @@
             <input type="password" id="senha" name="password" class="form-control" id="floatingPassword" placeholder="Password">
             <label for="floatingPassword">Senha</label>
         </div>
-        </form>
         <button class="botao-form" form="loginForm" type="submit">Login</button>
+         <a href="cadastro.html" class="link">Cadastre-se</a>
+        </form>
     </div>
 
 </div>

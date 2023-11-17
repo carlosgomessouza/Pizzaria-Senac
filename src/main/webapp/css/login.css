@@ -10,6 +10,10 @@
     text-decoration: none;
 }
 
+.link{
+ text-decoration: none;
+ color: gray;
+}
 
 .botao-form:hover{
     background-color: #fff;
