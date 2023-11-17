@@ -13,5 +13,10 @@ public class ClientBusiness {
     }
     public Client clientGet(int clientID) throws Exception {
         return ClientDao.clientGet(clientID);
+
     }
+    public void clientSave(Client client) throws Exception {
+        ClientDao.clientInsert(client);
+    }
+
 }

@@ -101,4 +101,40 @@ public class ClientDao {
             System.out.println("fail in database connection" + ex.getMessage());
             throw new Exception("Erro");        }
     }
+
+
+    public static void clientInsert(Client client) throws Exception {
+        final String SQL = "INSERT INTO " +
+                "Client" +
+                "(Name, Surname, Age, CPF, Gender, Zipcode, Address, AddressNumber) " +
+                "VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
+
+        try {
+
+            Connection connection = ConnectionPoolConfig.getConnection();
+
+            PreparedStatement preparedStatement = connection.prepareStatement(SQL);
+            java.util.Date dt = new java.util.Date();
+
+            java.text.SimpleDateFormat sdf =
+                    new java.text.SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+
+            String currentTime = sdf.format(dt);
+            preparedStatement.setString(1, client.getName());
+            preparedStatement.setString(2, client.getSurname());
+            preparedStatement.setInt(3, client.getAge());
+            preparedStatement.setString(4, client.getCpf());
+            preparedStatement.setString(5, client.getGender());
+            preparedStatement.setString(6, client.getZipcode());
+            preparedStatement.setString(7, client.getAddress());
+            preparedStatement.setInt(8, client.getAddressNumber());
+            preparedStatement.execute();
+
+            connection.close();
+
+        } catch (Exception e) {
+            throw new Exception("Erro");
+        }
+    }
+
 }
