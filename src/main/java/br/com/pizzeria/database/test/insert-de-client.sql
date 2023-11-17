@@ -1,0 +1,1 @@
+insert into Client (Name, Surname, Age, CPF, Gender, Zipcode, Address, AddressNumber) values ('Kadu', 'Gomes', 22, '55304056817', 'M', '04846500', 'Rua Força Popular', 89)

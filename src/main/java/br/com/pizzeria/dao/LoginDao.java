@@ -19,8 +19,6 @@ public class LoginDao {
             preparedStatement.setString(1, user.getEmail());
             ResultSet resultSet = preparedStatement.executeQuery();
 
-            System.out.println("success in select username");
-
             while (resultSet.next()) {
 
                 String password = resultSet.getString("password");
@@ -40,7 +38,6 @@ public class LoginDao {
         } catch (Exception e) {
 
             System.out.println("Error: " + e.getMessage());
-
             return false;
 
         }

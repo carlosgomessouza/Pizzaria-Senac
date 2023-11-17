@@ -31,8 +31,6 @@ public class RegisterDao {
             preparedStatement.setString(6, user.getPassword());
             preparedStatement.execute();
 
-            System.out.println("success in insert User");
-
             connection.close();
 
         } catch (Exception e) {

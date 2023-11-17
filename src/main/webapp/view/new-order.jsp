@@ -20,23 +20,23 @@
 
 <jsp:include page="action-bar.jsp" />
 
+<div class="containerr form-order-button">
+    <div class="nav">
+        <button class="elemento-sel" id="btn-order" onclick="showOrder();">Novo Pedido</button>
+        <button class="elemento" id="btn-address" onclick="showAddress();">Endereço</button>
+        <button class="elemento" id="btn-payment" onclick="showPayment();">Forma de Pagamento</button>
+    </div>
+</div>
 
-
+<form>
 <div class="containerr form-order" id="order">
 
-    <div class="nav">
-        <p class="elemento-sel">Novo Pedido</p>
-        <p class="elemento">Endereço</p>
-        <p class="elemento">Forma de Pagamento</p>
-    </div>
-
-
-    <div class="formulario">
+<div class="formulario">
         <h2 class="titulo-form">NOVO PEDIDO</h2>
-        <form action="/create-car" method="post">
 
         <div class="form-floating mb-3 row">
-            <select class="form-control" id="floatingInput" name="productList">
+            <select class="form-control" id="floatingSelectBox" onchange="changeProduct();" name="productList">
+                <option value="" selected>Selecione</option>
                 <c:forEach var="productList" items="${productList}">
                     <option value="${productList.productID}"}>${productList.name}</option>
                 </c:forEach>
@@ -44,78 +44,65 @@
             <label for="floatingInput">Produto</label>
         </div>
         <div class="form-floating mb-3 row">
-            <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <input type="text" class="form-control" id="floatingValue" >
             <label for="floatingInput">Preço</label>
         </div>
         <div class="form-floating mb-3 row">
-            <input type="number" class="form-control" id="floatingInput" placeholder="name@example.com">
-            <label for="floatingInput">Quantidade</label>
+            <input type="number" class="form-control" id="floatingInput" >
+            <label for="floatingInput">Quantidade ${requestScope.product.name}</label>
         </div>
         <div class="form-floating mb-3 row">
-            <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <input type="text" class="form-control" id="floatingInput" >
             <label for="floatingInput">Desconto</label>
         </div>
-
-
-        </form>
-
-
+        <div class="form-floating mb-3 row">
+            <input type="text" class="form-control" id="floatingType" >
+            <label for="floatingInput">Tipo</label>
+        </div>
     </div>
-
-    <button class="botao-form" type="submit" onclick="showAddress(); return false">
-        Próximo
-    </button>
-
 </div>
 
 <div class="containerr form-order address" id="address">
-
-  <div class="nav">
-    <p class="elemento">Novo Pedido</p>
-    <p class="elemento-sel">Endereço</p>
-    <p class="elemento">Forma de Pagamento</p>
-  </div>
-
   <div class="formulario">
     <h2 class="titulo-form">ENDERECO</h2>
-
-    <form action="/create-car" method="post">
     <div class="form-floating mb-3 row">
-      <input type="number" class="form-control" id="floatingInput" placeholder="name@example.com">
-      <label for="floatingInput">CEP</label>
+            <select class="form-control" id="floatingSelectBoxClient" onchange="changeClient();" name="clientList">
+                <option value="" selected>Selecione</option>
+                <c:forEach var="clientList" items="${clientList}">
+                    <option value="${clientList.clientID}"}>${clientList.name}</option>
+                </c:forEach>
+            </select>
     </div>
     <div class="form-floating mb-3 row">
-      <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
-      <label for="floatingInput">Rua</label>
+      <input type="number" class="form-control" id="floatingZipcode" placeholder="name@example.com">
+      <label for="floatingZipcode">CEP</label>
     </div>
     <div class="form-floating mb-3 row">
-      <input type="number" class="form-control" id="floatingInput" placeholder="name@example.com">
-      <label for="floatingInput">Bairro</label>
+      <input type="text" class="form-control" id="floatingAddress" placeholder="name@example.com">
+      <label for="floatingInput">Endereço</label>
     </div>
     <div class="form-floating mb-3 row">
-      <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
-      <label for="floatingInput">Número</label>
-    </div>
-    <div class="form-floating mb-3 row">
-      <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
-      <label for="floatingInput">Complemento</label>
+      <input type="text" class="form-control" id="floatingAddressNumber" placeholder="name@example.com">
+      <label for="floatingAddressNumber">Número</label>
     </div>
 
   </div>
-  <button class="botao-form" type="submit" onclick="proximaTela(); return false">
-    Próximo
-  </button>
-  </form>
-  <a class="botao-voltar" href="novoPedido.html">Voltar</a>
-
 </div>
 
+<div class="containerr form-order payment" id="payment" >
+  <div class="formulario">
+    <h2 class="titulo-form">FORMA DE PAGAMENTO</h2>
 
-<script>
-    function proximaTela(){
-  location.href = "endereco.html"
-    }
-</script>
+    <select class="form-select" aria-label="Default select example">
+      <option selected value="credito">Cartão de Crédito</option>
+      <option value="debito">Cartão de Débito</option>
+      <option value="pix">PIX</option>
+      <option value="dinheiro">Dinheiro</option>
+    </select>
+
+</div>
+</form>
+
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>

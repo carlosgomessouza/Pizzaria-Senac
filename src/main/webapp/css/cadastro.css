@@ -41,10 +41,27 @@
    flex-direction: column;
    align-items: center;
 }
+.form-order-button{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.form-order-button button{
+     padding: 10px;
+     margin: 15px;
+     background: white;
+     border: none;
+}
 
 .address{
    display: none;
 }
+
+.payment{
+   display: none;
+}
+
 
 .titulo-form{
     margin-bottom: 40px;
@@ -69,14 +86,17 @@
 .elemento{
     padding: 10px;
     margin: 15px;
+    background: white;
+    border: none;
 }
 
 .elemento-sel{
-    padding: 10px;
-    margin: 15px;
-    border: #FF7417 solid 1px;
-    color: #FF7417;
-    border-radius: 5px;
+    padding: 10px !important;
+    margin: 15px !important;
+    border: #FF7417 solid 1px !important;
+    color: #FF7417 !important;
+    border-radius: 5px !important;
+    background: white !important;
 }
 
 @media screen and (max-width: 700px)  {

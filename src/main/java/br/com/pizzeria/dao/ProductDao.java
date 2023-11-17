@@ -43,15 +43,52 @@ public class ProductDao {
                 productList.add(product);
             }
 
-            System.out.println("success in select * car");
-
             connection.close();
 
             return productList;
         }catch (Exception ex){
-            System.out.println("fail in database connection");
-
             return Collections.emptyList();
+        }
+    }
+
+    public static Product get(int productID) throws Exception {
+
+        final String SQL = "SELECT * FROM Product WHERE ProductID = ?";
+
+        try{
+            Connection connection = ConnectionPoolConfig.getConnection();
+
+            PreparedStatement preparedStatement = connection.prepareStatement(SQL);
+            preparedStatement.setInt(1, productID);
+            ResultSet resultSet = preparedStatement.executeQuery();
+
+            Product product = new Product();
+
+            while (resultSet.next()) {
+
+                String name = resultSet.getString("Name");
+                productID = resultSet.getInt("ProductID");
+                float cost = resultSet.getFloat("Cost");
+                float value = resultSet.getFloat("ProductValue");
+                int currentStock = resultSet.getInt("CurrentStock");
+                int productType = resultSet.getInt("ProductTypeID");
+
+
+                product.setName(name);
+                product.setProductID(productID);
+                product.setCost(cost);
+                product.setValue(value);
+                product.setCurrentStock(currentStock);
+                product.setProductType(productType);
+
+            }
+
+            connection.close();
+
+            return product;
+        }catch (Exception ex){
+            System.out.println("fail in database connection" + ex.getMessage());
+            throw new Exception("Erro");
         }
     }
 }

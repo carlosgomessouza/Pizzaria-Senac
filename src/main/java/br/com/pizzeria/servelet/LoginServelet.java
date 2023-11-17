@@ -42,7 +42,7 @@ public class LoginServelet extends HttpServlet {
 
             request.getSession().setAttribute("loggedUser", username);
 
-            response.sendRedirect("/product-list");
+            response.sendRedirect("/order-start");
 
         } else {
 

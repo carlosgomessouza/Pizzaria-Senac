@@ -10,4 +10,8 @@ public class ProductBusiness {
     public List<Product> autoComplete() throws Exception {
         return ProductDao.productAutoComplete();
     }
+
+    public Product get(int productID) throws Exception {
+        return ProductDao.get(productID);
+    }
 }
