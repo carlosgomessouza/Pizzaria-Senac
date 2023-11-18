@@ -11,7 +11,7 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                    <a class="nav-link active" aria-current="page" href="../index.jsp">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="sobrenos.html">Sobre Nós</a>
@@ -28,10 +28,9 @@
                          Cadastrar
                      </a>
                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="cadastroCliente.html">Cliente</a></li>
-                        <li><a class="dropdown-item" href="cadastro.html">Funcionário</a></li>
-                        <li><a class="dropdown-item" href="novoProduto.html">Produto</a></li>
-                        </ul>
+                        <li><a class="dropdown-item" href="view/new-client.jsp">Cliente</a></li>
+                        <li><a class="dropdown-item" href="view/novoProduto.jsp">Produto</a></li>
+                     </ul>
                 </li>
             </c:if>
                     <c:if test="${sessionScope.loggedUser != null}">
@@ -46,12 +45,12 @@
                   <div>
                     <c:if test="${sessionScope.loggedUser == null}">
                      <li class="nav-item">
-                                              <form action="view/login.jsp" method="post">
-                                                  <button class="nav-link" type="submit">
-                                                    <img src="../img/login.png" class="login" alt="">
-                                                     </button>
-                                              </form>
-                                         </li>
+                       <form action="view/login.jsp" method="post">
+                           <button class="nav-link" type="submit">
+                                <img src="../img/login.png" class="login" alt="">
+                           </button>
+                       </form>
+                     </li>
                      </c:if>
                   </div>
             </ul>
