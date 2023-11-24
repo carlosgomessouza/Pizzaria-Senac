@@ -17,10 +17,10 @@
                     <a class="nav-link" href="sobrenos.html">Sobre Nós</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/product-list">Client</a>
+                    <a class="nav-link" href="/product-list">Produtos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/client-list">Cliente</a>
+                    <a class="nav-link" href="/client-list">Clientes</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="novoPedido.html">Pedidos</a>

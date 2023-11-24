@@ -18,10 +18,16 @@ public class ProductListServelet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         try {
+            var requestPlace = request.getQueryString();
+            System.out.println(requestPlace);
             List<Product> productList = new ProductBusiness().autoComplete();
 
             request.setAttribute("productList", productList);
-
+            if(requestPlace.equals("requestPlace=index"))
+            {
+                request.getRequestDispatcher("home.jsp").forward(request, response);
+                return;
+            }
             request.getRequestDispatcher("view/product-list.jsp").forward(request, response);
         } catch (Exception e) {
             throw new RuntimeException(e);
