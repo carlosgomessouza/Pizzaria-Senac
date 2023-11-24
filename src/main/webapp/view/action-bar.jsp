@@ -29,7 +29,7 @@
                      </a>
                      <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="view/new-client.jsp">Cliente</a></li>
-                        <li><a class="dropdown-item" href="view/novoProduto.jsp">Produto</a></li>
+                        <li><a class="dropdown-item" href="view/new-product.jsp">Produto</a></li>
                      </ul>
                 </li>
             </c:if>
