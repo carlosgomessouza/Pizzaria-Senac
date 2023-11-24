@@ -23,7 +23,7 @@
                     <a class="nav-link" href="/client-list">Clientes</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="novoPedido.html">Pedidos</a>
+                    <a class="nav-link" href="/order-list">Pedidos</a>
                 </li>
             <c:if test="${sessionScope.loggedUser != null}">
                 <li class="nav-item dropdown">

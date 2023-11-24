@@ -24,7 +24,7 @@
     <ul class="product-list">
       <li>${orderList.name}</li>
       <li></li>
-      <li>${orderList.value}</li>
+      <li>${orderList.total}</li>
     </ul>
   </c:forEach>
 
