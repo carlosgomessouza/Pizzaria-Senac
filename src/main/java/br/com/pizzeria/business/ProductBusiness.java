@@ -14,4 +14,7 @@ public class ProductBusiness {
     public Product get(int productID) throws Exception {
         return ProductDao.get(productID);
     }
+    public void productSave(Product product) throws Exception {
+        ProductDao.productInsert(product);
+    }
 }

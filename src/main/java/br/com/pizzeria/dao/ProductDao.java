@@ -91,4 +91,30 @@ public class ProductDao {
             throw new Exception("Erro");
         }
     }
+    public static void productInsert(Product product) throws Exception {
+        final String SQL = "INSERT INTO " +
+                "Product" +
+                "(Name, Cost, ProductValue, CurrentStock, ProductTypeID) " +
+                "VALUES (?, ?, ?, ?, ?)";
+
+        try {
+
+            Connection connection = ConnectionPoolConfig.getConnection();
+
+            PreparedStatement preparedStatement = connection.prepareStatement(SQL);
+
+            preparedStatement.setString(1, product.getName());
+            preparedStatement.setFloat(2, product.getCost());
+            preparedStatement.setFloat(3, product.getValue());
+            preparedStatement.setInt(4, product.getCurrentStock());
+            preparedStatement.setInt(5, product.getProductType());
+
+            preparedStatement.execute();
+
+            connection.close();
+
+        } catch (Exception e) {
+            throw new Exception("Erro");
+        }
+    }
 }
