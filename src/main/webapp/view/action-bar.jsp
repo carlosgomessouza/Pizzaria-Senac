@@ -17,9 +17,10 @@
                     <a class="nav-link" href="sobrenos.html">Sobre Nós</a>
                 </li>
                 <li class="nav-item">
-                    <form action="/product-list" method="get">
-                       <button class="nav-link" type="submit">Produtos</button>
-                    </form>
+                    <a class="nav-link" href="/product-list">Client</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/client-list">Cliente</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="novoPedido.html">Pedidos</a>
