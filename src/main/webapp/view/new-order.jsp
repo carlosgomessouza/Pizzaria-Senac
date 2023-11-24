@@ -28,14 +28,14 @@
     </div>
 </div>
 
-<form>
+<form action="/order-save" id="order-save" method="post">
 <div class="containerr form-order" id="order">
 
 <div class="formulario">
         <h2 class="titulo-form">NOVO PEDIDO</h2>
 
         <div class="form-floating mb-3 row">
-            <select class="form-control" id="floatingSelectBox" onchange="changeProduct();" name="productList">
+            <select class="form-control" name="productID" id="floatingSelectBox" onchange="changeProduct();">
                 <option value="" selected>Selecione</option>
                 <c:forEach var="productList" items="${productList}">
                     <option value="${productList.productID}"}>${productList.name}</option>
@@ -44,11 +44,11 @@
             <label for="floatingInput">Produto</label>
         </div>
         <div class="form-floating mb-3 row">
-            <input type="text" class="form-control" id="floatingValue" >
+            <input type="text" name="value" class="form-control" id="floatingValue" >
             <label for="floatingInput">Preço</label>
         </div>
         <div class="form-floating mb-3 row">
-            <input type="number" class="form-control" id="floatingInput" >
+            <input type="number" name="amount" class="form-control" id="floatingInput" >
             <label for="floatingInput">Quantidade ${requestScope.product.name}</label>
         </div>
         <div class="form-floating mb-3 row">
@@ -56,7 +56,7 @@
             <label for="floatingInput">Desconto</label>
         </div>
         <div class="form-floating mb-3 row">
-            <input type="text" class="form-control" id="floatingType" >
+            <input type="text" name="productType" class="form-control" id="floatingType" >
             <label for="floatingInput">Tipo</label>
         </div>
     </div>
@@ -66,7 +66,7 @@
   <div class="formulario">
     <h2 class="titulo-form">ENDERECO</h2>
     <div class="form-floating mb-3 row">
-            <select class="form-control" id="floatingSelectBoxClient" onchange="changeClient();" name="clientList">
+            <select class="form-control" name="clientID" id="floatingSelectBoxClient" onchange="changeClient();" >
                 <option value="" selected>Selecione</option>
                 <c:forEach var="clientList" items="${clientList}">
                     <option value="${clientList.clientID}"}>${clientList.name}</option>
@@ -102,6 +102,10 @@
 
 </div>
 </form>
+
+  <button type="submit" form="order-save" class="botao-form" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Salvar
+  </button>
 
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>

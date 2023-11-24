@@ -14,7 +14,7 @@
                     <a class="nav-link active" aria-current="page" href="../index.jsp">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="sobrenos.html">Sobre Nós</a>
+                    <a class="nav-link" href="view/sobrenos.jsp">Sobre Nós</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/product-list">Produtos</a>
@@ -31,8 +31,8 @@
                          Cadastrar
                      </a>
                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="view/new-client.jsp">Cliente</a></li>
-                        <li><a class="dropdown-item" href="view/new-product.jsp">Produto</a></li>
+                        <li><a class="dropdown-item" href="../view/new-client.jsp">Cliente</a></li>
+                        <li><a class="dropdown-item" href="../view/new-product.jsp">Produto</a></li>
                      </ul>
                 </li>
             </c:if>
