@@ -24,7 +24,7 @@ public class LoginServelet extends HttpServlet {
         var isLoggedOn = new AuthenticationFilter().isUserLoggedOn(request);
 
         if(isLoggedOn){
-            response.sendRedirect("/product-list");
+            response.sendRedirect("/order-start");
             return;
         }
 

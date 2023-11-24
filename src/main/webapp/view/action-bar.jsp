@@ -17,7 +17,9 @@
                     <a class="nav-link" href="sobrenos.html">Sobre Nós</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="novoProduto.jsp">Produtos</a>
+                    <form action="/product-list" method="get">
+                       <button class="nav-link" type="submit">Produtos</button>
+                    </form>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="novoPedido.html">Pedidos</a>
