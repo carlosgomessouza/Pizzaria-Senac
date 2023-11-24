@@ -22,7 +22,7 @@ public class ProductListServelet extends HttpServlet {
 
             request.setAttribute("productList", productList);
 
-            request.getRequestDispatcher("view/new-order.jsp").forward(request, response);
+            request.getRequestDispatcher("view/product-list.jsp").forward(request, response);
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
