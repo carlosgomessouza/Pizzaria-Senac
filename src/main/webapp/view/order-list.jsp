@@ -17,7 +17,7 @@
     <li>Nome</li>
     <li></li>
     <li>Valor</li>
-    <li>Quantidade</li>
+    <li>Alterar</li>
   </ul>
 
   <c:forEach var="orderList" items="${orderList}">
@@ -25,6 +25,12 @@
       <li>${orderList.name}</li>
       <li></li>
       <li>${orderList.total}</li>
+      <li>
+        <form action="/order-delete" method="post">
+            <input type="hidden" id="orderID" name="orderID" value="${orderList.orderID}">
+            <button type="submit">Excluir</button>
+        </form>
+      </li>
     </ul>
   </c:forEach>
 

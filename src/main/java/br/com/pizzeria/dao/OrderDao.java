@@ -62,6 +62,7 @@ public class OrderDao {
 
                 order.setTotal(total);
                 order.setName(name);
+                order.setOrderID(orderID);
 
                 orderList.add(order);
             }
@@ -71,6 +72,25 @@ public class OrderDao {
             return orderList;
         }catch (Exception ex){
             return Collections.emptyList();
+        }
+
+
+    }
+
+    public static void orderDelete(int orderID){
+        String SQL = "DELETE Orders WHERE orderID = ?";
+
+        try{
+            Connection connection = ConnectionPoolConfig.getConnection();
+
+            PreparedStatement preparedStatement = connection.prepareStatement(SQL);
+            preparedStatement.setInt(1, orderID);
+            preparedStatement.execute();
+
+            connection.close();
+
+        }catch (Exception ex){
+            System.out.println("Error: " + ex.getMessage());
         }
 
 

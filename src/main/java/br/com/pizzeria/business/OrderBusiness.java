@@ -14,4 +14,8 @@ public class OrderBusiness {
     public List<Order> orderList() throws Exception {
         return OrderDao.orderList();
     }
+
+    public void orderDelete(int orderID){
+        OrderDao.orderDelete(orderID);
+    }
 }

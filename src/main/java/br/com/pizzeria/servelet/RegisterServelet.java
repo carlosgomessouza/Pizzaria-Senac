@@ -28,15 +28,15 @@ public class RegisterServelet extends HttpServlet {
             User user = new User();
 
             user.setUserName(userName);
-            user.setUserName(surname);
-            user.setUserName(phone);
-            user.setUserName(email);
-            user.setUserName(cpf);
-            user.setUserName(password);
+            user.setSurname(surname);
+            user.setPhone(phone);
+            user.setEmail(email);
+            user.setCPF(cpf);
+            user.setPassword(password);
 
             new RegisterBusiness(user).UserSave();
 
-            response.sendRedirect("/login");
+            request.getRequestDispatcher("view/login.jsp").forward(request, response);
         }catch (Exception ex){
             response.sendError(1, String.format("Erro: %s", ex));
         }

@@ -2,6 +2,15 @@ package br.com.pizzeria.model;
 
 public class Order {
 
+    public int getOrderID() {
+        return orderID;
+    }
+
+    public void setOrderID(int orderID) {
+        this.orderID = orderID;
+    }
+
+    private int orderID;
     private Product productOrder;
     private Client clientOrder;
     private int amount;
@@ -20,7 +29,7 @@ public class Order {
     private float total;
 
     public float getTotal() {
-        return total;
+        return 1;
     }
 
     public void setTotal(float total) {
