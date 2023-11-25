@@ -38,7 +38,7 @@ public class ProductSaveServelet extends HttpServlet {
 
             new ProductBusiness().productSave(product);
 
-            request.getRequestDispatcher("view/new-order.jsp").forward(request, response);
+            response.sendRedirect("/product-list");
         } catch (Exception e) {
             throw new RuntimeException(e);
         }

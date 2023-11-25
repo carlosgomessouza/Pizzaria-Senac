@@ -47,7 +47,7 @@ public class ClientSaveServelet extends  HttpServlet {
 
             new ClientBusiness().clientSave(client);
 
-            response.sendRedirect("/order-start");
+            response.sendRedirect("/client-list");
         }catch (Exception ex){
             response.sendError(1, String.format("Erro: %s", ex));
         }

@@ -38,6 +38,7 @@ public class OrderSaveServelet extends HttpServlet {
 
             new OrderBusiness().orderSave(order);
 
+            response.sendRedirect("/order-list");
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
