@@ -50,7 +50,7 @@
                      <li class="nav-item">
                        <form action="view/login.jsp" method="post">
                            <button class="nav-link" type="submit">
-                                <img src="../img/login.png" class="login" alt="">
+                                <img src="../img/login2.png" class="login" alt="">
                            </button>
                        </form>
                      </li>
