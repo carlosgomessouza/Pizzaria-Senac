@@ -40,7 +40,7 @@
         <img src="img/pizza-calabresa.PNG" class="card-img-top" alt="...">
         <div class="card-body">
             <h5 class="card-title">${productList.name}</h5>
-            <p class="card-text">Calabresa, cebola e azeitona.</p>
+            <p class="card-text">Acompanham: molho de tomate e azeitona.</p>
             <a href="#" class="btn btn-primary">${productList.value} R$</a>
         </div>
     </div>
