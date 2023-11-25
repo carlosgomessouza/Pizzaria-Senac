@@ -22,7 +22,7 @@ public class OrderDao {
             PreparedStatement preparedStatement = connection.prepareStatement(SQL);
 
             preparedStatement.setString(1, "Pedido de venda");
-            preparedStatement.setFloat(2, order.getTotal());
+            preparedStatement.setFloat(2, order.getAmount() * order.getProductOrder().getValue());
             preparedStatement.setFloat(3, order.getDiscount());
             preparedStatement.setString(4, order.getClientOrder().getZipcode());
             preparedStatement.setString(5, order.getClientOrder().getAddress());

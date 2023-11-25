@@ -29,7 +29,7 @@ public class Order {
     private float total;
 
     public float getTotal() {
-        return 1;
+        return total;
     }
 
     public void setTotal(float total) {
