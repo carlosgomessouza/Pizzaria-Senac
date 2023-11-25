@@ -22,9 +22,9 @@
 
   <c:forEach var="orderList" items="${orderList}">
     <ul class="product-list">
-      <li>${orderList.name}</li>
+      <li>${orderList.name} n° ${orderList.orderID}</li>
       <li></li>
-      <li>${orderList.total}</li>
+      <li>${orderList.total} R$</li>
       <li>
         <form action="/order-delete" method="post">
             <input type="hidden" id="orderID" name="orderID" value="${orderList.orderID}">

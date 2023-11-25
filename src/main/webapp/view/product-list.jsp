@@ -24,7 +24,7 @@
     <ul class="product-list">
       <li>${productList.name}</li>
       <li></li>
-      <li>${productList.value}</li>
+      <li>${productList.value} R$</li>
       <c:if test="${productList.productType == 1}">
         <li>Pequena</li>
       </c:if>
